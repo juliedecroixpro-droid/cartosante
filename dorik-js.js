@@ -109,6 +109,17 @@
     }
   }
 
+  // Force z-index and overflow on parent containers
+  var fixParents = document.getElementById("zn-suggestions");
+  if(fixParents){
+    var p = fixParents.parentElement;
+    while(p && p !== document.body){
+      p.style.overflow = "visible";
+      p.style.position = p.style.position || "relative";
+      p = p.parentElement;
+    }
+  }
+
   // Load data from Vercel
   fetch("https://cartosante-sigma.vercel.app/data/zonage.json")
     .then(function(r){return r.json();})
