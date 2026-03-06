@@ -3,7 +3,7 @@
   <!-- Hero -->
   <div style="background: linear-gradient(to bottom, #1E40AF, #2563EB); color: white; padding: 48px 16px; border-radius: 16px; text-align: center; margin-bottom: 24px;">
     <h1 style="font-size: 28px; font-weight: 700; margin: 0 0 8px;">Zonage Conventionnel Infirmier</h1>
-    <p style="color: #BFDBFE; font-size: 16px; margin: 0 0 32px;">Decouvrez la classification de votre commune en un clic</p>
+    <p style="color: #BFDBFE; font-size: 16px; margin: 0 0 32px;">Verifiez le zonage de votre commune et les aides disponibles pour votre installation</p>
     <div style="position: relative; max-width: 500px; margin: 0 auto;">
       <input id="zn-search" type="text" placeholder="Chargement des donnees..." autocomplete="off"
         style="width: 100%; padding: 14px 44px 14px 16px; border-radius: 12px; border: none; font-size: 16px; color: #111; outline: none; box-sizing: border-box;">
@@ -15,11 +15,28 @@
   <!-- Result -->
   <div id="zn-result" style="display: none;"></div>
 
-  <!-- Comprendre le zonage -->
+  <!-- SEO Content: Qu'est-ce que le zonage -->
+  <div style="padding: 48px 0 0;">
+    <h2 style="font-size: 22px; font-weight: 700; color: #111; text-align: center; margin: 0 0 24px;">Qu'est-ce que le zonage conventionnel infirmier ?</h2>
+    <div style="max-width: 680px; margin: 0 auto; color: #374151; line-height: 1.8; font-size: 15px;">
+      <p style="margin: 0 0 16px;">Le zonage conventionnel infirmier est un dispositif mis en place par l'Assurance Maladie et les Agences Regionales de Sante (ARS) pour reguler l'installation des infirmieres et infirmiers liberaux (IDEL) sur le territoire francais. Il vise a corriger les inegalites d'acces aux soins infirmiers entre les differentes communes.</p>
+      <p style="margin: 0 0 16px;">Chaque commune de France est classee dans l'une des cinq zones suivantes, en fonction du ratio entre le nombre d'infirmiers installes et les besoins de la population locale :</p>
+      <ul style="margin: 0 0 16px; padding-left: 20px;">
+        <li style="margin-bottom: 8px;"><strong>Zone tres sous-dotee :</strong> l'offre de soins est tres insuffisante. Les IDEL qui s'y installent beneficient d'aides financieres importantes (contrat incitatif ARS, prime pouvant atteindre 37 500 euros, exonerations fiscales en ZRR).</li>
+        <li style="margin-bottom: 8px;"><strong>Zone sous-dotee :</strong> l'offre reste insuffisante. Des contrats d'aide a l'installation sont proposes par la CPAM.</li>
+        <li style="margin-bottom: 8px;"><strong>Zone intermediaire :</strong> l'offre est equilibree. L'installation est libre, sans aide ni restriction particuliere.</li>
+        <li style="margin-bottom: 8px;"><strong>Zone tres dotee :</strong> l'offre depasse les besoins. L'installation reste libre mais aucune aide n'est accordee.</li>
+        <li style="margin-bottom: 8px;"><strong>Zone sur-dotee :</strong> l'offre est excedentaire. Le conventionnement est soumis a la regle du "1 pour 1" : un nouvel IDEL ne peut s'installer que si un autre cesse son activite dans la meme zone.</li>
+      </ul>
+      <p style="margin: 0 0 16px;">Ce classement est revise periodiquement par les ARS en concertation avec les representants de la profession. Il constitue un critere essentiel pour tout projet d'installation en liberal, car il determine directement les conditions de conventionnement et l'acces aux aides financieres.</p>
+    </div>
+  </div>
+
+  <!-- Comprendre le zonage (visual) -->
   <div style="padding: 48px 0;">
-    <h2 style="font-size: 22px; font-weight: 700; color: #111; text-align: center; margin: 0 0 12px;">Comprendre le zonage</h2>
+    <h2 style="font-size: 22px; font-weight: 700; color: #111; text-align: center; margin: 0 0 12px;">Les 5 zones en detail</h2>
     <p style="color: #6B7280; text-align: center; margin: 0 auto 32px; max-width: 600px; line-height: 1.6;">
-      Le zonage conventionnel infirmier classe chaque commune selon le niveau d'offre de soins infirmiers par rapport aux besoins de la population. Il determine les conditions d'installation et les aides accessibles.
+      34 919 communes francaises sont classees selon leur niveau d'offre de soins infirmiers. Consultez le detail de chaque zone ci-dessous.
     </p>
     <div id="zn-zones"></div>
     <div id="zn-table" style="margin-top: 40px; overflow-x: auto;"></div>
@@ -27,5 +44,47 @@
   </div>
 
   <!-- Stats -->
-  <div id="zn-stats" style="padding-bottom: 48px;"></div>
+  <div id="zn-stats" style="padding-bottom: 32px;"></div>
+
+  <!-- CTA: Lance-toi en liberal -->
+  <div style="background: linear-gradient(135deg, #1E40AF, #7C3AED); border-radius: 16px; padding: 40px 24px; text-align: center; margin: 16px 0 48px;">
+    <h2 style="font-size: 24px; font-weight: 700; color: white; margin: 0 0 12px;">Pret a vous lancer en liberal ?</h2>
+    <p style="color: #C7D2FE; font-size: 15px; margin: 0 0 24px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+      La Maison des Infirmiers vous accompagne dans votre projet d'installation. Demarches administratives, choix de la zone, financement : on vous guide a chaque etape.
+    </p>
+    <a href="https://maisondesinfirmiers.fr/contact" style="display: inline-block; background: white; color: #1E40AF; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,.15); transition: transform 0.2s;"
+       onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      Lancez-vous en liberal
+    </a>
+  </div>
+
+  <!-- SEO Content: FAQ -->
+  <div style="max-width: 680px; margin: 0 auto; padding: 0 0 48px;">
+    <h2 style="font-size: 22px; font-weight: 700; color: #111; text-align: center; margin: 0 0 24px;">Questions frequentes</h2>
+
+    <div style="border-bottom: 1px solid #F3F4F6; padding: 16px 0;">
+      <h3 style="font-size: 15px; font-weight: 600; color: #111; margin: 0 0 8px;">Comment connaitre le zonage de ma commune ?</h3>
+      <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin: 0;">Utilisez notre outil de recherche en haut de cette page. Saisissez le nom de votre commune ou son code INSEE pour obtenir instantanement sa classification et les aides associees.</p>
+    </div>
+
+    <div style="border-bottom: 1px solid #F3F4F6; padding: 16px 0;">
+      <h3 style="font-size: 15px; font-weight: 600; color: #111; margin: 0 0 8px;">Quelles aides pour s'installer en zone sous-dotee ?</h3>
+      <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin: 0;">En zone tres sous-dotee, vous pouvez beneficier d'un contrat incitatif ARS, d'une aide a l'installation pouvant atteindre 37 500 euros et d'exonerations fiscales (ZRR). En zone sous-dotee, un contrat d'aide a l'installation est propose par la CPAM.</p>
+    </div>
+
+    <div style="border-bottom: 1px solid #F3F4F6; padding: 16px 0;">
+      <h3 style="font-size: 15px; font-weight: 600; color: #111; margin: 0 0 8px;">Qu'est-ce que la regle du "1 pour 1" ?</h3>
+      <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin: 0;">En zone sur-dotee, le conventionnement d'un nouvel infirmier liberal est conditionne au depart d'un confrere dans la meme zone. Cela signifie qu'un poste doit se liberer avant qu'un nouveau professionnel puisse s'installer avec un conventionnement.</p>
+    </div>
+
+    <div style="border-bottom: 1px solid #F3F4F6; padding: 16px 0;">
+      <h3 style="font-size: 15px; font-weight: 600; color: #111; margin: 0 0 8px;">A quelle frequence le zonage est-il mis a jour ?</h3>
+      <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin: 0;">Le zonage est revise periodiquement par les ARS, generalement tous les deux a trois ans, en concertation avec les representants de la profession infirmiere liberale et l'Assurance Maladie.</p>
+    </div>
+
+    <div style="padding: 16px 0;">
+      <h3 style="font-size: 15px; font-weight: 600; color: #111; margin: 0 0 8px;">Puis-je m'installer en zone sur-dotee ?</h3>
+      <p style="color: #6B7280; font-size: 14px; line-height: 1.6; margin: 0;">Oui, vous pouvez exercer en zone sur-dotee, mais sans conventionnement avec l'Assurance Maladie tant qu'un poste ne se libere pas. Sans conventionnement, vos patients ne beneficient pas du remboursement de leurs soins, ce qui rend l'activite difficile en pratique.</p>
+    </div>
+  </div>
 </div>
